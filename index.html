@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER SPORTS | Elevate Your Game</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-bolt"></i> SUPER<span>SPORTS</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#products">Trending</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search gear...">
+                    <button><i class="fa-solid fa-search"></i></button>
+                </div>
+                
+                <button class="icon-btn theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="icon-btn" aria-label="User Profile"><i class="fa-regular fa-user"></i></button>
+                <button class="icon-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <button class="icon-btn cart-btn" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Trending</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <h1 class="hero-title">DEFY GRAVITY.<br><span class="neon-text">ELEVATE YOUR GAME.</span></h1>
+                    <p class="hero-subtitle">Premium, high-performance athletic gear designed for speed, innovation, and absolute power. Step into the future of sports.</p>
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn-primary">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#categories" class="btn btn-outline">Explore Categories</a>
+                    </div>
+                </div>
+                <!-- Abstract visual placeholder representing motion/sports -->
+                <div class="hero-visual" style="background-image: url('images/hero_bg_1776278833786.png'); background-size: cover; background-position: center; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 240, 255, 0.2); overflow: hidden;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="categories-section section-padding container">
+            <h2 class="section-title">Shop by <span class="neon-text-green">Discipline</span></h2>
+            <div class="categories-grid">
+                <a href="#products" class="category-card" data-category="cricket">
+                    <i class="fa-solid fa-baseball-bat-ball"></i>
+                    <h3>Cricket</h3>
+                </a>
+                <a href="#products" class="category-card" data-category="football">
+                    <i class="fa-solid fa-futbol"></i>
+                    <h3>Football</h3>
+                </a>
+                <a href="#products" class="category-card" data-category="basketball">
+                    <i class="fa-solid fa-basketball"></i>
+                    <h3>Basketball</h3>
+                </a>
+                <a href="#products" class="category-card" data-category="gym">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h3>Gym & Fitness</h3>
+                </a>
+                <a href="#products" class="category-card" data-category="outdoor">
+                    <i class="fa-solid fa-person-hiking"></i>
+                    <h3>Outdoor Sports</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Trending Products Section -->
+        <section id="products" class="products-section section-padding container">
+            <div class="section-header">
+                <h2 class="section-title">Trending <span class="neon-text">Gear</span></h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="cricket">Cricket</button>
+                    <button class="filter-btn" data-filter="football">Football</button>
+                    <button class="filter-btn" data-filter="basketball">Basketball</button>
+                    <button class="filter-btn" data-filter="gym">Gym & Fitness</button>
+                    <button class="filter-btn" data-filter="outdoor">Outdoor Sports</button>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- OUTDOOR -->
+                <div class="product-card" data-category="outdoor">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="images/outdoor_runners_1776278849414.png" alt="AeroGlide Pro Runners">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> (124)
+                        </div>
+                        <h3 class="product-title">AeroGlide Pro Runners</h3>
+                        <p class="product-price">$149.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="outdoor">
+                    <div class="product-image">
+                        <img src="images/outdoor_backpack_1776278868111.png" alt="All-Terrain Trekking Backpack">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> (67)
+                        </div>
+                        <h3 class="product-title">All-Terrain Trekking Backpack</h3>
+                        <p class="product-price">$119.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="outdoor">
+                    <div class="product-badge discount">-15%</div>
+                    <div class="product-image">
+                        <img src="images/outdoor_sunglasses_1776278886558.png" alt="Polarized Sports Sunglasses">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> (42)
+                        </div>
+                        <h3 class="product-title">Polarized Sports Sunglasses</h3>
+                        <p class="product-price"><span class="old-price">$59.99</span> $49.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- GYM -->
+                <div class="product-card" data-category="gym">
+                    <div class="product-image">
+                        <img src="images/gym_dumbbells_1776279017573.png" alt="Titanium Core Dumbbells">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> (89)
+                        </div>
+                        <h3 class="product-title">Titanium Core Dumbbells</h3>
+                        <p class="product-price">$89.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="gym">
+                    <div class="product-image">
+                        <img src="images/gym_tee_1776279055576.png" alt="Velocity Compression Tee">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> (210)
+                        </div>
+                        <h3 class="product-title">Velocity Compression Tee</h3>
+                        <p class="product-price">$34.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="gym">
+                    <div class="product-badge">Top Rated</div>
+                    <div class="product-image">
+                        <img src="images/gym_bench_1776279074790.png" alt="Adjustable Weight Bench">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> (150)
+                        </div>
+                        <h3 class="product-title">Adjustable Weight Bench</h3>
+                        <p class="product-price">$199.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- BASKETBALL -->
+                <div class="product-card" data-category="basketball">
+                    <div class="product-badge discount">-20%</div>
+                    <div class="product-image">
+                        <img src="https://loremflickr.com/600/400/basketball,ball/all" alt="Quantum Grip Basketball">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> (56)
+                        </div>
+                        <h3 class="product-title">Quantum Grip Basketball</h3>
+                        <p class="product-price"><span class="old-price">$49.99</span> $39.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="basketball">
+                    <div class="product-image">
+                        <img src="https://loremflickr.com/600/400/basketball,shoes/all" alt="High-Top Court Shoes">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> (88)
+                        </div>
+                        <h3 class="product-title">High-Top Court Shoes</h3>
+                        <p class="product-price">$129.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="basketball">
+                    <div class="product-image">
+                        <img src="https://loremflickr.com/600/400/basketball,jersey/all" alt="Breathable Practice Jersey">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> (34)
+                        </div>
+                        <h3 class="product-title">Breathable Practice Jersey</h3>
+                        <p class="product-price">$29.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- CRICKET -->
+                <div class="product-card" data-category="cricket">
+                    <div class="product-image">
+                        <img src="https://loremflickr.com/600/400/cricket,bat/all" alt="Pro-Strike English Willow Bat">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> (45)
+                        </div>
+                        <h3 class="product-title">Pro-Strike English Willow Bat</h3>
+                        <p class="product-price">$249.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cricket">
+                    <div class="product-image">
+                        <img src="https://loremflickr.com/600/400/cricket,helmet/all" alt="SG Titanium Cricket Helmet">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> (30)
+                        </div>
+                        <h3 class="product-title">SG Titanium Cricket Helmet</h3>
+                        <p class="product-price">$79.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cricket">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-image">
+                        <img src="https://loremflickr.com/600/400/cricket,ball/all" alt="Premium Leather Match Ball">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> (214)
+                        </div>
+                        <h3 class="product-title">Premium Leather Match Ball</h3>
+                        <p class="product-price">$24.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- FOOTBALL -->
+                <div class="product-card" data-category="football">
+                    <div class="product-badge">Exclusive</div>
+                    <div class="product-image">
+                        <img src="https://loremflickr.com/600/400/football,cleats/all" alt="HyperVenom Elite Cleats">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> (312)
+                        </div>
+                        <h3 class="product-title">HyperVenom Elite Cleats</h3>
+                        <p class="product-price">$189.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="football">
+                    <div class="product-image">
+                        <img src="https://loremflickr.com/600/400/soccer,ball/all" alt="Champions League Match Ball">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> (145)
+                        </div>
+                        <h3 class="product-title">Champions League Match Ball</h3>
+                        <p class="product-price">$149.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="football">
+                    <div class="product-image">
+                        <img src="https://loremflickr.com/600/400/soccer,gloves/all" alt="Goalkeeper Grip Gloves Pro">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> (87)
+                        </div>
+                        <h3 class="product-title">Goalkeeper Grip Gloves Pro</h3>
+                        <p class="product-price">$65.99</p>
+                        <button class="btn btn-primary fluid add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limited Time Offers -->
+        <section id="offers" class="offers-banner">
+            <div class="container offer-content">
+                <h2>Flash Sale! <span class="neon-text-green">Up to 50% Off</span></h2>
+                <p>Equip yourself with the best gear. Limited sizes available.</p>
+                <div class="countdown">
+                    <div class="time-box"><span>12</span><small>Hours</small></div>
+                    <div class="time-box"><span>45</span><small>Mins</small></div>
+                    <div class="time-box"><span>30</span><small>Secs</small></div>
+                </div>
+                <button class="btn btn-primary">Grab the Deal</button>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials-section section-padding container">
+            <h2 class="section-title text-center">Athlete <span class="neon-text">Reviews</span></h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="quote">"Super Sports gear literally changed my game. The AeroGlide runners feel like I'm defying gravity!"</p>
+                    <div class="reviewer">
+                        <div class="avatar">J</div>
+                        <div class="r-info">
+                            <h4>Jason M.</h4>
+                            <span>Pro Sprinter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="quote">"The premium feel and extreme durability are unmatched. I recommend this to all my gym buddies."</p>
+                    <div class="reviewer">
+                        <div class="avatar">S</div>
+                        <div class="r-info">
+                            <h4>Sarah K.</h4>
+                            <span>Fitness Coach</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                    <p class="quote">"Fast shipping and amazing quality. The basketball has a grip that just sticks to your hands."</p>
+                    <div class="reviewer">
+                        <div class="avatar">D</div>
+                        <div class="r-info">
+                            <h4>David W.</h4>
+                            <span>Amateur Player</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="about" class="about-section section-padding container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">The <span class="neon-text-green">Antigravity</span> Story</h2>
+                    <p>Born from a relentless pursuit of perfection, Antigravity (the parent brand of SUPER SPORTS) was founded on a simple principle: <strong>to shatter limits.</strong></p>
+                    <p>We engineers combine futuristic materials with athletic insights to create gear that is lighter, stronger, and more responsive. Our mission is to empower every athlete to reach their maximum potential and truly defy gravity.</p>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check text-neon"></i> Innovative Materials</li>
+                        <li><i class="fa-solid fa-check text-neon"></i> Ergonomic Designs</li>
+                        <li><i class="fa-solid fa-check text-neon"></i> Pro-Level Performance</li>
+                    </ul>
+                </div>
+                <div class="about-visual">
+                    <div class="glow-orb"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section id="contact" class="contact-section section-padding container">
+            <h2 class="section-title text-center">Get in <span class="neon-text">Touch</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> 123 Innovation Drive, Tech City, TX 75001</p>
+                    <p><i class="fa-solid fa-envelope"></i> support@supersports.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +1 (800) 123-4567</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="name" required placeholder="Your Name">
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required placeholder="Your Email">
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary fluid">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-bolt"></i> SUPER<span>SPORTS</span>
+                </a>
+                <p>Elevating performance with next-generation sports gear.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">Men's</a></li>
+                    <li><a href="#">Women's</a></li>
+                    <li><a href="#">Equipment</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Return & Refund Policy</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe for early access to drops and exclusive offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SUPER SPORTS by Antigravity. All rights reserved.</p>
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-paypal"></i>
+                <i class="fa-brands fa-google-pay"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal (Mock) -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <button class="close-btn" id="close-cart"><i class="fa-solid fa-times"></i></button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+                <p class="empty-cart-msg">Your cart is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total-price">$0.00</span>
+                </div>
+                <button class="btn btn-primary fluid" style="margin-top: 1rem;">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
